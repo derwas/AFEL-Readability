@@ -1,0 +1,146 @@
+/*
+ Theme Name:   AFEL 2017
+ Theme URI:    http://www.know-center.tugraz.at/
+ Description:  Template for AFEL
+ Author:       Patrick Lengauer
+ Author URI:   http://www.patricklengauer.info
+ Template:     wordpress-bootstrap-master
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         positive, light, art, work
+ Text Domain:  afel-2017
+*/
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.3em;}
+h6 {font-size: 1.2em;}
+blockquote {font-style: italic;}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+
+ body .navbar-default .navbar-nav > .active > a, body .navbar-default .navbar-nav > .active > a:hover, body .navbar-default .navbar-nav > .active > a:focus,  body .navbar-default .navbar-nav > .active > a, body .navbar-default .navbar-nav > .active > a:hover, body .navbar-default .navbar-nav > .active > a:focus {color:white;}
+div.cover {background-image: url('/assets/images/afel-hero.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; color:white;height: 200px; max-height:100%; min-height:35%;}
+div.cover ul.nav a {color:white;}
+div.cover ul.nav > li {background-color:rgba(255,255,255,0.2); margin-right:5px;}
+div.cover ul.nav > li a {padding:8px 12px;}
+div.cover ul.nav li.active {background-color:rgba(255,255,255,0.4);}
+div.cover ul.nav li.active > a, div.cover ul.nav li.current-menu-parent > a, div.cover ul.nav li.current-menu-item > a { font-weight: 600;}
+div.cover ul.nav ul.sub-menu {display: none; list-style: none; margin-left: 0; padding: 0.5em 0; width: 320px;}
+div.cover ul.nav .sub-menu .sub-menu {font-size:0.9em; margin-top:0.5em;}
+div.cover ul.nav > li li {padding-left: 1em;}
+
+div.cover .navbar-brand span {background-image: url('/assets/images/afel-logo-large.png'); background-repeat: no-repeat; -webkit-background-size: contain;background-size: contain;display: block; height: 80px; text-indent: -999em; width: 220px;}
+div.cover .front-page-bg {background-color:rgba(255,255,255,0.3); bottom: 0; padding: 1em; position: absolute;}
+
+a.tag-cloud-link {background-color: #444; }
+a.tag-cloud-link:hover {background-color: #999;}
+
+.content-section {font-size:15px; line-height:1.58em;}
+.category-news .page-header {display: none;}
+
+ul.post-categories {list-style-type: none; padding: 0;}
+ul.post-categories li {display:inline; margin: 0; padding: 0;}
+
+.person {margin-top: 1em;}
+.person h3 {margin-top: 0;}
+.post_content img {height: auto; max-width: 100%;}
+
+.row.partner {margin-top: 3em;}
+.row.partner h3 {margin-top: 0;}
+
+article img {max-width:100%; margin:1em 0;}
+article .lead {font-size:initial;}
+article .post_content img {float: right; margin: 0  0 10px 10px;}
+
+article.article-list {margin-bottom: 2em; margin-top: 1em;}
+
+.row.publications {}
+.row.publications .publication {background-color: #eaeaea; cursor: pointer; margin-bottom: 5px; padding: 5px;}
+.row.publications .publication:nth-child(2n+1) {background-color: #fbfbfb;}
+.row.publications .publication .publication-more {display: none;}
+
+.sidebar .widget {margin-bottom: 3em; margin-top: 1em;}
+.sidebar .widget_recent_entries ul {list-style-type: none; margin: 0; padding: 0;}
+.sidebar .widget_recent_entries ul li {margin-bottom: 1em;}
+.sidebar .widget_recent_entries .post-date {clear:both; display:block; font-size:0.8em;}
+
+.gallery {clear: both; float: left; width: 100%;}
+.gallery .gallery-thumbnail {float: left; padding: 1%; width: 18%;}
+
+footer  { padding-top: 2em; padding-bottom: 2em; height: 100px; background: #337cbb; color: white;  width: 100%;}
+footer ul.footer-nav {list-style-type:none; margin: 0; padding: 0;}
+footer ul.footer-nav li {float: left; margin-right: 1em;}
+footer .footer-nav a {color:white;}
+footer .external-links a {margin-top: 2em; padding-left: 1em;}
+footer .european-commission {display: inline-block; line-height: 1em; top: -14px; position: relative;}
+footer .research-gate, footer .research-gate:hover {color:white; font-size:1.2em; text-decoration: none;}
+
+@media (min-width:768px){
+  div.cover ul.nav li:hover > ul.sub-menu {background-color:rgba(255,255,255,0.25); display:block; position: absolute;}
+  div.cover ul.nav li:hover > a {color:#ddd; text-decoration: none;}
+  div.cover ul.nav li.active > a, div.cover ul.nav li.current-menu-parent > a, div.cover ul.nav li.current-menu-item > a {color:white;}
+}
+
+@media (max-width:991px){
+  body .nav > li > a {padding: 15px 10px;}
+  div.cover .navbar-brand span {width: 180px;}
+}
+
+@media (max-width:767px){
+  div.cover .navbar-brand span {height: 40px; margin-top: -10px; width: 160px;}
+  .navbar-collapse {background-color:rgba(255,255,255,0.8); border-bottom: 1px solid #337cbb; position: relative; z-index:999;}
+  body .nav > li > a {color:#333; padding: 8px 15px;}
+  div.cover ul.nav > li, div.cover ul.nav li.active {background-color:transparent;}
+  div.cover ul.nav a, div.cover ul.nav li.active a {color:#333;}
+  div.cover ul.nav ul.sub-menu {display: block !important; font-size:1em !important; margin-top: 0; position: relative;}
+  div.cover {overflow: visible;}
+
+  .gallery .gallery-thumbnail {float: left; padding: 1%; width: 23%;}
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;    
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.glyphicon {
+    font-size: 15px;
+}	

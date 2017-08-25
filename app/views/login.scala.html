@@ -1,0 +1,27 @@
+@(myForm: Form[User])
+@main("Login") {
+
+        <div class="container" id="main-container">
+        <div class="panel-body">
+@helper.form(action = routes.Application.authenticate()) {
+   <h1>Sign in</h1>
+
+@if(flash.contains("success")) {
+    <p class="success">
+        @flash.get("success")
+    </p>
+}
+   <p>
+    @helper.inputText(myForm("name"))
+	</p>
+   <p>
+    @helper.inputPassword(myForm("password"))
+   </p>
+   <p>
+       <button type="submit">Login</button>
+   </p>
+}
+</div>
+			
+	</div> <!-- /container -->
+}

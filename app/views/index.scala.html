@@ -1,0 +1,44 @@
+@(url:String,stats:Html,scores:Html,concepts:Html)
+
+
+@main("AFEL - Online Resource Readability Evaluation") {
+
+	<div class="jumbotron">
+      <div class="container">
+       	<div class="row">
+       		<div class="col-md-10 col-sm-offset-1">
+		      <h2>Evaluate the readability of your online resource <a href="#" data-toggle="tooltip" data-placement="top" title="Copy and paste the URL of the page that you want to evaluate in the following bar."> <span class="glyphicon glyphicon-info-sign"></a></h2>
+              <form class="form-inline" action="@routes.HomeController.index()" method="get">
+                <div id="custom-search-input">
+	                <div class="input-group col-md-12">
+	                    <input type="URL" class="form-control input-lg" value="@url"name="url-input" />
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-info btn-lg" type="submit">
+	                            <i class="glyphicon glyphicon-search"></i>
+	                        </button>
+	                    </span>
+	                </div>
+                </div>
+              </form>
+              </div>
+        	</div>
+      </div>
+    </div>
+
+    <div class="container" id="content">
+   		<div class="row">
+       @stats
+       @scores
+       </div>
+       <div class="row">
+       @concepts
+
+      </div> 
+    </div>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+}

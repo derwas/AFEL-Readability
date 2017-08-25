@@ -1,0 +1,44 @@
+@(title: String)(content: Html)
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>@title</title>
+    <link  rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")"/>
+    <link  rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-theme.min.css")"/>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/style.css")"/>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/font-awesome.min.css")">
+    <link rel="shortcut icon" href="@routes.Assets.versioned("images/favicon.ico")"/>
+	<script src="@routes.Assets.versioned("javascripts/jquery.min.js")"></script> 
+	<script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script> 
+</head>
+<body>
+  <div class="cover">
+	<a class="navbar-brand" href="http://afel-project.eu/" target="_blank"><span>AFEL - Analytics for Everyday Learning</span></a>
+	</div>
+	
+	
+	        @content
+	
+
+<footer class="footer navbar-fixed-bottom">
+				<div class="container">
+						<div class="row">
+								<div class="col-sm-6">
+										<p>This project has received funding from the European Union's Horizon 2020
+												research and innovation programme under grant agreement No 687916 &nbsp;</p>
+								</div>
+								<div class="col-sm-6">
+										<div class="row">
+												<div class="col-md-12 text-right external-links">
+														<a class="european-commission" href="http://ec.europa.eu/" target="_blank"><img src="@routes.Assets.versioned("images/european-commission-logo.png")" alt="European Commission"></a>
+														<a class="research-gate" href="https://www.researchgate.net/project/Analytics-for-Everyday-Learning-http-afel-projecteu" target="_blank">Research<sup>Gate</sup></a>
+														<a href="https://twitter.com/afelproject" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</footer>
+  </body>
+</html>
