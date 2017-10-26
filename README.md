@@ -23,6 +23,9 @@ To change the active java version, please run:
 
 >$export PATH=${JAVA_HOME}/bin:${PATH}
 
+
+# Compile, Start and Stop the application
+
 ### Compile
 Compiling the project requires sbt
 
@@ -32,7 +35,6 @@ Compiling the project requires sbt
 
 >$./sbt stage
 
-# Start and Stop the application
 ### Start
 The application is play framework app to start it use the following command:
 
